@@ -1,5 +1,5 @@
-# NAME FIXME
-# DATE
+# Michael Sales #Fixed#
+# 2/16/2023 #Fixed#
 
 def slope(x1, y1, x2, y2):
     pass
