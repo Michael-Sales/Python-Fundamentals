@@ -2,9 +2,14 @@
 # 2/16/2023 #Fixed#
 
 def slope(x1, y1, x2, y2):
-    pass
+    return ((y2-y1)/(x2-x1))
 
 def intercept(x1, y1, x2, y2):
+    m = (y2-y1)/(x2-x1)
+    b = 0 #FIXME
+    return b
+
+def mid_point(x1,y1,x2,y2):
     pass
 
 def test_slope():
@@ -20,5 +25,12 @@ def test_intercept():
     assert intercept(4, 6, 12, 8) == 5.0
     print('all test cases passed for intercept()')
 
+def test_mid_point():
+    assert mid_point(0, 0, 2, 2) == (1,1)
+    assert mid_point(1, 2, 3, 2) == (1, 0.0)
+    assert mid_point(3, 6, 12, 8) == (4.5,1.0)
+    print('all test cases passed for mid_point()')
+
 test_slope()
 test_intercept()
+test_mid_point()
